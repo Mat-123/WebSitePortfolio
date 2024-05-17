@@ -30,7 +30,7 @@ Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
 
 3. **Avvia il Gioco**
     ```bash
-    npm start
+    npm run dev
     ```
 
 4. **Esplora il Portfolio**
