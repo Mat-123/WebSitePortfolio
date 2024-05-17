@@ -11,7 +11,7 @@ Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
 
 - **Grafica Animata**: Sprites dettagliati con animazioni fluide per un'esperienza visiva accattivante.
 - **Interazione con l'Ambiente**: Tutti gli oggetti nella stanza sono interattivi, fornendo informazioni e dialoghi pertinenti.
-- **Movimento del Personaggio**: Controlli del personaggio fluidi tramite tastiera e mouse.
+- **Movimento del Personaggio**: Controlli del personaggio fluidi tramite il mouse (in futuro implementero' anche la tastiera).
 - **Dialoghi Dinamici**: Sistema di dialogo interattivo con opzioni multiple per una maggiore immersione.
 
 ## Come Iniziare
