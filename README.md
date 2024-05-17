@@ -1,6 +1,6 @@
 # WebSite Portfolio Game
 
-Benvenuto nel repository del **WebSite Portfolio Game**, un progetto che trasforma un portfolio personale in un'esperienza di gioco interattiva. Utilizzando la libreria **Kaboom.js**, questo progetto offre un modo unico e coinvolgente per esplorare il mio portfolio Mat-123. Tutti gli oggetti nella stanza sono interattivi, e il giocatore può esplorare e interagire con vari elementi per saperne di più sui progetti e le esperienze dell'autore.
+Benvenuto nel repository del **WebSite Portfolio Game**, un progetto che trasforma un portfolio personale in un'esperienza di gioco interattiva. Realizzato utilizzando **Javascript**, **Vite** e la libreria **Kaboom.js**, questo progetto offre un modo unico e coinvolgente per esplorare il mio portfolio. Tutti gli oggetti nella stanza sono interattivi, e il giocatore può esplorare e interagire con vari elementi per saperne di più sui progetti e le esperienze dell'autore.
 
 
 Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
@@ -18,8 +18,8 @@ Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
 
 1. **Clona il Repository**
     ```bash
-    git clone https://github.com/tuo-username/interactive-portfolio-game.git
-    cd interactive-portfolio-game
+    git clone https://github.com/Mat-123/WebSitePortfolio.git
+    cd WebSitePortfolio
     ```
 
 2. **Installa le Dipendenze**
