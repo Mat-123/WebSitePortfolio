@@ -5,6 +5,8 @@ Benvenuto nel repository del **Interactive Portfolio Game**, un progetto che tra
 
 Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
 
+![Pagina principale di gioco.](./public/Screenshot.png)
+
 ## Funzionalità principali
 
 - **Grafica Animata**: Sprites dettagliati con animazioni fluide per un'esperienza visiva accattivante.
