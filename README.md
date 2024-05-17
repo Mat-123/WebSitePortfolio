@@ -40,5 +40,5 @@ Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
 
 - **constants.js**: Contiene le costanti globali utilizzate nel gioco.
 - **kaboomCtx.js**: Inizializza e configura il contesto di Kaboom.js.
-- **utils.js**: Funzioni di utilità per la gestione dei dialoghi e della camera.
+- **utils.js**: Contiene la logica di gestione dei dialoghi e della camera.
 - **main.js**: Codice principale che gestisce le scene e la logica del gioco.
