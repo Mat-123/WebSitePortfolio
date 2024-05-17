@@ -28,7 +28,7 @@ Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
     npm install
     ```
 
-3. **Avvia il Gioco**
+3. **Avvia il Gioco in Locale**
     ```bash
     npm run dev
     ```
