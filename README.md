@@ -2,6 +2,9 @@
 
 Benvenuto nel repository del **Interactive Portfolio Game**, un progetto che trasforma un portfolio personale in un'esperienza di gioco interattiva. Utilizzando la libreria **Kaboom.js**, questo progetto offre un modo unico e coinvolgente per esplorare il portfolio di Mat-123. Tutti gli oggetti nella stanza sono interattivi, e il giocatore può esplorare e interagire con vari elementi per saperne di più sui progetti e le esperienze dell'autore.
 
+
+Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
+
 ## Funzionalità principali
 
 - **Grafica Animata**: Sprites dettagliati con animazioni fluide per un'esperienza visiva accattivante.
