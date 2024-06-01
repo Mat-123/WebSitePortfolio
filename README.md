@@ -3,7 +3,7 @@
 Benvenuto nel repository del **WebSite Portfolio Game**, un progetto che trasforma un portfolio personale in un'esperienza di gioco interattiva. Realizzato utilizzando **Javascript**, **Vite** e la libreria **Kaboom.js**, questo progetto offre un modo unico e coinvolgente per esplorare il mio portfolio. Tutti gli oggetti nella stanza sono interattivi, e il giocatore può esplorare e interagire con vari elementi per saperne di più sui progetti e le esperienze dell'autore.
 
 
-Link al sito: [Clicca qui](https://mat-123-portfolio.netlify.app/).
+Link al sito: [Clicca qui](https://mat-123.netlify.app/).
 
 ![Pagina principale di gioco.](./public/Screenshot.png)
 
