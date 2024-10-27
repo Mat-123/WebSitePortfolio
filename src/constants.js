@@ -14,7 +14,7 @@ export const dialogueData = {
     bed: `Letto? Riposo? Come Dev non conosco questi linguaggi...`,
     cv: `Sul tavolo c'è un foglio, è il mio Curriculum. <a href="https://github.com/Mat-123/Resume/blob/main/CV.pdf" target="_blank">Vuoi visionarlo?</a> Contattami a matteo.montani@proton.me se hai un'offerta di lavoro!`,
     tv: `Ecco una lista dei miei progetti:
-    <ul><li><a href="https://github.com/Mat-123/WebSitePortfolio" target="_blank">WebSite Portfolio Game</li><li><a href="https://www.linkedin.com/posts/matteo-montani-36a0a02b9_javascript-reactjs-bootstrap-activity-7190654099804033024-tHgv?utm_source=share&utm_medium=member_desktop" target="_blank">Crypto Networth Tracker</a> (in fase di sviluppo)</li></ul>`,
+    <ul><li><a href="https://github.com/Mat-123/WebSitePortfolio" target="_blank">WebSite Portfolio Game</li><li><a href="https://github.com/Mat-123/CrypTracker" target="_blank">CrypTracker</a></li></ul>`,
     pic: '<figure><img src="./me.jpg" width="100%"><figcaption>Me surfin the matrix.</figcaption></figure>',
     mom: {
         text: "Ciao! Cosa stai cercando?",
