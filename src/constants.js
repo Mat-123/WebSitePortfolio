@@ -8,6 +8,7 @@ export const dialogueData = {
     <li>PHP</li>
     <li>MySQL</li>
     <li>React</li>
+    <li>Laravel</li>
     <li>HTML5/CSS3</li>
     </ul>`,
     bed: `Letto? Riposo? Come Dev non conosco questi linguaggi...`,
