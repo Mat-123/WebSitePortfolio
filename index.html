@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -41,44 +41,44 @@
         filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
       }
 
-.ui-text {
-  margin: 0;
-  user-select: none;
-  overflow-wrap: anywhere;
-}
+      .ui-text {
+        margin: 0;
+        user-select: none;
+        overflow-wrap: anywhere;
+      }
 
-.ui-close-btn {
-  font-family: RBYGSC, monospace;
-  border-style: none;
-  border-radius: 3px;
-  padding: 0 1rem 1rem 1rem;
-  font-size: inherit;
-}
+      .ui-close-btn {
+        font-family: RBYGSC, monospace;
+        border-style: none;
+        border-radius: 3px;
+        padding: 0 1rem 1rem 1rem;
+        font-size: inherit;
+      }
 
-.btn-container {
-  align-self: flex-end;
-  margin-top: 1rem;
-}
+      .btn-container {
+        align-self: flex-end;
+        margin-top: 1rem;
+      }
 
-.note {
-  position: absolute;
-  left: 5%;
-  top: 1vh;
-  display: flex;
-  flex-direction: column;
-  color: rgb(238, 238, 238);
-  user-select: none;
-}
+      .note {
+        position: absolute;
+        left: 5%;
+        top: 1vh;
+        display: flex;
+        flex-direction: column;
+        color: rgb(238, 238, 238);
+        user-select: none;
+      }
 
-.clickable-option {
-    cursor: pointer;
-}
+      .clickable-option {
+        cursor: pointer;
+      }
 
-.image-container {
-            max-width: 100%;
-            height: auto;
-        }
-@media screen and (max-width: 576px) {
+      .image-container {
+        max-width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width: 576px) {
         body {
           font-size: 1.5rem;
         }
@@ -88,13 +88,13 @@
       <div id="ui">
         <p class="note">Tap/Click around to move</p>
         <div id="textbox-container" style="display: none">
-        <div id="textbox" class="image-container">
-          <p id="dialogue" class="ui-text"></p>
-          <div class="btn-container">
-            <button id="close" class="ui-close-btn">Chiudi</button>
+          <div id="textbox" class="image-container">
+            <p id="dialogue" class="ui-text"></p>
+            <div class="btn-container">
+              <button id="close" class="ui-close-btn">Chiudi</button>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <canvas id="game"></canvas>
     </div>

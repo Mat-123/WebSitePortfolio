@@ -1,0 +1,36 @@
+{
+  "pc": "<ul style=\"list-style-type: none;\"><li>Accesso in corso...</li><li>Accesso effettuato.</li></ul>Benvenuto! Ecco i link a <a href=\"https://github.com/Mat-123\" target=\"_blank\">GitHub</a> e al profilo <a href=\"https://www.linkedin.com/in/matteo-montani-36a0a02b9/\" target=\"_blank\">LinkedIn</a>.",
+  "library": "Sono una persona molto curiosa e mi piace conoscere cose nuove, ecco gli strumenti che utilizzo:\n    <ul>\n    <li>C#</li>\n    <li>.NET</li>\n    <li>Javascript</li>\n    <li>MySQL</li>\n    <li>React</li>\n    <li>HTML5/CSS3</li>\n    </ul>",
+  "bed": "Letto? Riposo? Come Dev non conosco questi linguaggi...",
+  "cv": "Sul tavolo c'è un foglio, è il mio Curriculum. <a href=\"https://github.com/Mat-123/Resume/blob/main/CV.pdf\" target=\"_blank\">Vuoi visionarlo?</a> Contattami a matteo.montani@proton.me se hai un'offerta di lavoro!",
+  "tv": {
+    "text": "Ecco una lista dei miei progetti. Scegli un progetto per saperne di più:",
+    "options": {
+      "► WebSite Portfolio Game": "project_portfolio",
+      "► CrypTracker": "project_cryptracker"
+    }
+  },
+  "project_portfolio": {
+    "text": "Questo è il portfolio interattivo che stai attualmente esplorando! Realizzato con JS/Vite e Kaboom.js. <a href='https://github.com/Mat-123/WebSitePortfolio' target='_blank'>Visita il repository GitHub</a>",
+    "options": {
+      "◄ Torna alla lista": "tv"
+    }
+  },
+  "project_cryptracker": {
+    "text": "CrypTracker è un'applicazione per monitorare l'andamento delle criptovalute, realizzata con JS/React e PHP/Laravel. <a href='https://github.com/Mat-123/CrypTracker' target='_blank'>Visita il repository GitHub</a>",
+    "options": {
+      "◄ Torna alla lista": "tv"
+    }
+  },
+  "pic": "<figure><img src=\"./me.jpg\" width=\"100%\"><figcaption>Me surfin the matrix.</figcaption></figure>",
+  "mom": {
+    "text": "Ciao! Cosa stai cercando?",
+    "options": {
+      "► Curriculum": "Il Curriculum si trova sul tavolo al centro della stanza.",
+      "► Github": "Per consultare il GitHub ti basta accedere al Pc sulla scrivania.",
+      "► Progetti": "Accendi la TV per visualizzare i progetti.",
+      "► Linguaggi e Librerie": "Per consultare i principali linguaggi e librerie utilizzati consulta la libreria accanto al Pc.",
+      "► LinkedIn": "Vuoi visionare il profilo LinkedIn? Accedi al Pc."
+    }
+  }
+}
