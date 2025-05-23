@@ -7,7 +7,8 @@
     "text": "Ecco una lista dei miei progetti. Scegli un progetto per saperne di più:",
     "options": {
       "► WebSite Portfolio Game": "project_portfolio",
-      "► CrypTracker": "project_cryptracker"
+      "► CrypTracker": "project_cryptracker",
+      "► Secret Is Better": "project_secretisbetter"
     }
   },
   "project_portfolio": {
@@ -18,6 +19,12 @@
   },
   "project_cryptracker": {
     "text": "CrypTracker è un'applicazione per monitorare l'andamento delle criptovalute, realizzata con JS/React e PHP/Laravel. <a href='https://github.com/Mat-123/CrypTracker' target='_blank'>Visita il repository GitHub</a>",
+    "options": {
+      "◄ Torna alla lista": "tv"
+    }
+  },
+  "project_secretisbetter": {
+    "text": "Secret Is Better è un'applicazione web per condividere i tuoi messaggi segreti, realizzata con JS/Boostrap e C#/.NET. <a href='https://safe.fcw.it/' target='_blank'>Visita il sito web</a>",
     "options": {
       "◄ Torna alla lista": "tv"
     }
