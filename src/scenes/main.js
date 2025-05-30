@@ -1,11 +1,13 @@
 import { k } from "../kaboomCtx";
-import { dialogueData, scaleFactor } from "../constants";
+import { scaleFactor } from "../constants";
 import { displayDialogue, setCamScale } from "../utils";
 import { createPlayer, setupPlayerMovement } from "../entities/player";
+import { languageManager } from "../language";
 
 // Function to handle interactive object dialogues
 function handleInteraction(player, dialogueKey) {
   player.isInDialogue = true;
+  const dialogueData = languageManager.getDialogueData();
   let currentDialogue = dialogueData[dialogueKey];
 
   function showDialogue(dialogueContent) {
@@ -53,8 +55,7 @@ export function createMainScene() {
   k.scene("main", async () => {
     const mapData = await (await fetch("./map.json")).json();
     const layers = mapData.layers;
-    const introText =
-      'Benvenuto nel portfolio di <span style="font-weight: bold;">Ｍａｔ-123</span>!\nSe non trovi qualcosa chiedi alla mamma.\nTutti gli oggetti nella stanza sono interattivi.';
+    const introText = languageManager.getUIText("introText");
 
     // Create map
     const map = k.add([k.sprite("map"), k.pos(0), k.scale(scaleFactor)]);
@@ -112,18 +113,17 @@ export function createMainScene() {
 
     player.onCollide("mom", () => {
       const yDiff = Math.abs(player.pos.y - mom.pos.y);
-  
-  
+
       if (yDiff > 35) {
-          if (player.pos.y < mom.pos.y) {
-              mom.play("mom-up");
-          } else if (player.pos.y > mom.pos.y) {
-              mom.play("mom-down");
-          }
+        if (player.pos.y < mom.pos.y) {
+          mom.play("mom-up");
+        } else if (player.pos.y > mom.pos.y) {
+          mom.play("mom-down");
+        }
       } else {
-          if (mom.curAnim() !== "mom-side") {
-              mom.play("mom-side");
-          }
+        if (mom.curAnim() !== "mom-side") {
+          mom.play("mom-side");
+        }
       }
     });
     // Setup camera

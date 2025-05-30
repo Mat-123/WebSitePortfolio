@@ -1,0 +1,73 @@
+{
+  "pc": "<ul style=\"list-style-type: none;\"><li>Logging in...</li><li>Access granted.</li></ul>Welcome! Here are the links to <a href=\"https://github.com/Mat-123\" target=\"_blank\">GitHub</a> and the <a href=\"https://www.linkedin.com/in/mat-123-montani/?locale=en_US\" target=\"_blank\">LinkedIn</a> profile.",
+  "library": "I'm a very curious person and I love learning new things, here are the tools I use:\n    <ul>\n    <li>C#</li>\n    <li>.NET</li>\n    <li>Javascript</li>\n    <li>SQL Server/MySQL</li>\n    <li>React</li>\n    <li>HTML5/CSS3</li>\n    </ul>",
+  "bed": "Bed? Rest? As a Dev I don't know these languages...",
+  "cv": "There's a paper on the table, it's my Resume. <a href=\"https://github.com/Mat-123/Resume/blob/main/CV%20ENG.pdf\" target=\"_blank\">Would you like to check it out?</a> Contact me at matteo.montani@proton.me if you have a job offer!",
+  "tv": {
+    "text": "Here's a list of my projects. Choose a project to learn more:",
+    "options": {
+      "► WebSite Portfolio Game": "project_portfolio",
+      "► CrypTracker": "project_cryptracker",
+      "► Secret Is Better": "project_secretisbetter"
+    }
+  },
+  "project_portfolio": {
+    "text": "This is the interactive portfolio you're currently exploring! Built with JS/Vite and Kaboom.js. <a href='https://github.com/Mat-123/WebSitePortfolio' target='_blank'>Visit the GitHub repository</a>",
+    "options": {
+      "◄ Back to list": "tv"
+    }
+  },
+  "project_cryptracker": {
+    "text": "CrypTracker is an application to monitor cryptocurrency trends, built with JS/React and PHP/Laravel. <a href='https://github.com/Mat-123/CrypTracker' target='_blank'>Visit the GitHub repository</a>",
+    "options": {
+      "◄ Back to list": "tv"
+    }
+  },
+  "project_secretisbetter": {
+    "text": "Secret Is Better is a web application to share your secret messages, built with JS/Bootstrap and C#/.NET/ASP.NET MVC. <a href='https://safe.fcw.it/' target='_blank'>Visit the website</a>",
+    "options": {
+      "◄ Back to list": "tv"
+    }
+  },
+  "pic": "<figure><img src=\"./me.jpg\" width=\"100%\"><figcaption>Me surfin the matrix.</figcaption></figure>",
+  "mom": {
+    "text": "Hello! What are you looking for?",
+    "options": {
+      "► Resume": "mom_curriculum",
+      "► Github": "mom_github",
+      "► Projects": "mom_progetti",
+      "► Languages and Libraries": "mom_linguaggi",
+      "► LinkedIn": "mom_linkedin"
+    }
+  },
+  "mom_curriculum": {
+    "text": "The Resume is on the table in the center of the room.",
+    "options": {
+      "◄ Back to list": "mom"
+    }
+  },
+  "mom_github": {
+    "text": "To check GitHub just access the PC on the desk.",
+    "options": {
+      "◄ Back to list": "mom"
+    }
+  },
+  "mom_progetti": {
+    "text": "Turn on the TV to view the projects.",
+    "options": {
+      "◄ Back to list": "mom"
+    }
+  },
+  "mom_linguaggi": {
+    "text": "To see the main languages and libraries used, check the bookshelf next to the PC.",
+    "options": {
+      "◄ Back to list": "mom"
+    }
+  },
+  "mom_linkedin": {
+    "text": "Want to view the LinkedIn profile? Access the PC.",
+    "options": {
+      "◄ Back to list": "mom"
+    }
+  }
+}

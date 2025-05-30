@@ -70,6 +70,27 @@
         user-select: none;
       }
 
+      .language-switcher {
+        position: absolute;
+        right: 5%;
+        top: 1vh;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        color: rgb(238, 238, 238);
+        padding: 0.5rem 1rem;
+        font-family: RBYGSC, monospace;
+        font-size: 1.5rem;
+        cursor: pointer;
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+
+      .language-switcher:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+
       .clickable-option {
         cursor: pointer;
       }
@@ -82,11 +103,16 @@
         body {
           font-size: 1.5rem;
         }
+        .language-switcher {
+          font-size: 1rem;
+          padding: 0.3rem 0.5rem;
+        }
       }
     </style>
     <div id="app">
       <div id="ui">
         <p class="note">Tap/Click around to move</p>
+        <button id="language-switcher" class="language-switcher">🇬🇧 EN</button>
         <div id="textbox-container" style="display: none">
           <div id="textbox" class="image-container">
             <p id="dialogue" class="ui-text"></p>
