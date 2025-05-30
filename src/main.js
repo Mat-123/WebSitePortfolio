@@ -19,10 +19,22 @@ loadSprites();
 createStartScene();
 createMainScene();
 
+// Ensure game canvas has focus for keyboard input
+function ensureCanvasFocus() {
+  const gameCanvas = document.getElementById("game");
+  if (gameCanvas) {
+    gameCanvas.focus();
+    console.log("Initial focus set to game canvas");
+  }
+}
+
 // Initialize language system and start the game
 async function initGame() {
   await languageManager.loadLanguage(languageManager.getCurrentLanguage());
   k.go("start");
+
+  // Set focus to canvas after game starts
+  setTimeout(ensureCanvasFocus, 100);
 }
 
 initGame();

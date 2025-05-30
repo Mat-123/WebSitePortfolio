@@ -99,6 +99,11 @@
         max-width: 100%;
         height: auto;
       }
+
+      #game {
+        outline: none; /* Remove focus outline for better appearance */
+      }
+
       @media screen and (max-width: 576px) {
         body {
           font-size: 1.5rem;
@@ -122,7 +127,7 @@
           </div>
         </div>
       </div>
-      <canvas id="game"></canvas>
+      <canvas id="game" tabindex="0"></canvas>
     </div>
     <script type="module" src="src/main.js"></script>
   </body>

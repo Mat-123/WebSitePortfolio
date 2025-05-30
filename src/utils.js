@@ -2,6 +2,7 @@
 export function displayDialogue(text, allowClickToClose = false, options, onOptionSelected, onDisplayEnd) {
   const dialogueUI = document.getElementById("textbox-container");
   const dialogue = document.getElementById("dialogue");
+  const gameCanvas = document.getElementById("game");
 
   dialogueUI.style.display = "block";
 
@@ -11,13 +12,27 @@ export function displayDialogue(text, allowClickToClose = false, options, onOpti
   let clickHandler;
   let dialogueClickHandler;
 
+  // Helper function to restore focus to game canvas
+  function restoreFocus() {
+    if (gameCanvas) {
+      gameCanvas.focus();
+      console.log("Focus restored to game canvas"); // Debug log
+    }
+  }
+
   // Provide default onDisplayEnd if not provided
   const defaultOnDisplayEnd = () => {
     dialogueUI.style.display = "none";
     dialogue.innerHTML = "";
+    restoreFocus(); // Restore focus when dialogue ends
   };
 
-  const actualOnDisplayEnd = onDisplayEnd || defaultOnDisplayEnd;
+  const actualOnDisplayEnd = onDisplayEnd
+    ? (...args) => {
+        onDisplayEnd(...args);
+        restoreFocus(); // Restore focus after custom onDisplayEnd
+      }
+    : defaultOnDisplayEnd;
 
   intervalRef = setInterval(() => {
     if (index < text.length) {
@@ -43,6 +58,7 @@ export function displayDialogue(text, allowClickToClose = false, options, onOpti
           if (onOptionSelected) {
             onOptionSelected(options[option]);
           }
+          // Note: Focus will be restored by the parent dialogue when it fully closes
         });
         dialogue.appendChild(optionElement);
       }
@@ -52,7 +68,7 @@ export function displayDialogue(text, allowClickToClose = false, options, onOpti
   // Add click-to-close functionality if enabled
   if (allowClickToClose) {
     // console.log("Setting up click-to-close for intro text");
-    
+
     const closeDialogue = () => {
       // console.log("Click-to-close triggered");
       clearInterval(intervalRef);
@@ -68,12 +84,14 @@ export function displayDialogue(text, allowClickToClose = false, options, onOpti
 
     clickHandler = (event) => {
       // Prevent closing when clicking on options or close button
-      if (event.target.classList.contains('clickable-option') || 
-          event.target.id === 'close' ||
-          event.target.closest('#textbox-container')) {
+      if (
+        event.target.classList.contains("clickable-option") ||
+        event.target.id === "close" ||
+        event.target.closest("#textbox-container")
+      ) {
         return;
       }
-      
+
       // console.log("Document click detected", event.target);
       closeDialogue();
     };
@@ -85,7 +103,7 @@ export function displayDialogue(text, allowClickToClose = false, options, onOpti
         closeDialogue();
       }
     };
-    
+
     // Add click listeners after a small delay to prevent immediate closing
     setTimeout(() => {
       // console.log("Adding click listeners");
