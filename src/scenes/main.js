@@ -111,6 +111,22 @@ export function createMainScene() {
       }
     }
 
+    player.onCollide("mom", () => {
+      const yDiff = Math.abs(player.pos.y - mom.pos.y);
+  
+  
+      if (yDiff > 35) {
+          if (player.pos.y < mom.pos.y) {
+              mom.play("mom-up");
+          } else if (player.pos.y > mom.pos.y) {
+              mom.play("mom-down");
+          }
+      } else {
+          if (mom.curAnim() !== "mom-side") {
+              mom.play("mom-side");
+          }
+      }
+  });
     // Setup camera
     setCamScale(k);
     k.onResize(() => {
