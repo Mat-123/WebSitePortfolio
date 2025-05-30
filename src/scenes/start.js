@@ -3,7 +3,7 @@ import { displayDialogue } from "../utils";
 
 export function createStartScene() {
   k.scene("start", () => {
-    const startText = "Premi barra spaziatrice o fai click col mouse per avviare il gioco";
+    const startText = "Premi barra spaziatrice o fai click col mouse per avviare il gioco.";
 
     displayDialogue(
       startText,

@@ -24,7 +24,7 @@
     }
   },
   "project_secretisbetter": {
-    "text": "Secret Is Better è un'applicazione web per condividere i tuoi messaggi segreti, realizzata con JS/Boostrap e C#/.NET. <a href='https://safe.fcw.it/' target='_blank'>Visita il sito web</a>",
+    "text": "Secret Is Better è un'applicazione web per condividere i tuoi messaggi segreti, realizzata con JS/Boostrap e C#/.NET/ASP.NET MVC. <a href='https://safe.fcw.it/' target='_blank'>Visita il sito web</a>",
     "options": {
       "◄ Torna alla lista": "tv"
     }
@@ -33,11 +33,41 @@
   "mom": {
     "text": "Ciao! Cosa stai cercando?",
     "options": {
-      "► Curriculum": "Il Curriculum si trova sul tavolo al centro della stanza.",
-      "► Github": "Per consultare il GitHub ti basta accedere al Pc sulla scrivania.",
-      "► Progetti": "Accendi la TV per visualizzare i progetti.",
-      "► Linguaggi e Librerie": "Per consultare i principali linguaggi e librerie utilizzati consulta la libreria accanto al Pc.",
-      "► LinkedIn": "Vuoi visionare il profilo LinkedIn? Accedi al Pc."
+      "► Curriculum": "mom_curriculum",
+      "► Github": "mom_github",
+      "► Progetti": "mom_progetti",
+      "► Linguaggi e Librerie": "mom_linguaggi",
+      "► LinkedIn": "mom_linkedin"
+    }
+  },
+  "mom_curriculum": {
+    "text": "Il Curriculum si trova sul tavolo al centro della stanza.",
+    "options": {
+      "◄ Torna alla lista": "mom"
+    }
+  },
+  "mom_github": {
+    "text": "Per consultare il GitHub ti basta accedere al Pc sulla scrivania.",
+    "options": {
+      "◄ Torna alla lista": "mom"
+    }
+  },
+  "mom_progetti": {
+    "text": "Accendi la TV per visualizzare i progetti.",
+    "options": {
+      "◄ Torna alla lista": "mom"
+    }
+  },
+  "mom_linguaggi": {
+    "text": "Per consultare i principali linguaggi e librerie utilizzati consulta la libreria accanto al Pc.",
+    "options": {
+      "◄ Torna alla lista": "mom"
+    }
+  },
+  "mom_linkedin": {
+    "text": "Vuoi visionare il profilo LinkedIn? Accedi al Pc.",
+    "options": {
+      "◄ Torna alla lista": "mom"
     }
   }
 }

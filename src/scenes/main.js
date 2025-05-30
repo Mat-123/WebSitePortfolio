@@ -15,37 +15,35 @@ function handleInteraction(player, dialogueKey) {
       return;
     }
 
+    const onDialogueEnd = () => {
+      player.isInDialogue = false;
+    };
+
     if (typeof dialogueContent === "string") {
-      // If it's a string, display it directly (e.g., simple responses from mom)
-      displayDialogue(dialogueContent, null, null, () => {
-        player.isInDialogue = false;
-      });
+      displayDialogue(dialogueContent, false, null, null, onDialogueEnd);
     } else if (dialogueContent.options) {
       // If it has options, it's a complex dialogue node
       displayDialogue(
         dialogueContent.text,
+        false,
         dialogueContent.options,
         (nextDialogueKeyOrResponse) => {
           // Check if the selected option leads to another dialogue key or is a direct response string
           const nextContent = dialogueData[nextDialogueKeyOrResponse];
           if (nextContent) {
             currentDialogue = nextContent;
-            dialogueKey = nextDialogueKeyOrResponse; // Update dialogueKey for error reporting
+            dialogueKey = nextDialogueKeyOrResponse;
             showDialogue(currentDialogue);
           } else {
             // It's a direct response string (e.g. mom's answers)
             showDialogue(nextDialogueKeyOrResponse);
           }
         },
-        () => {
-          player.isInDialogue = false;
-        }
+        onDialogueEnd
       );
     } else {
       // It's a simple dialogue node with no options (e.g. project description)
-      displayDialogue(dialogueContent.text || dialogueContent, null, null, () => {
-        player.isInDialogue = false;
-      });
+      displayDialogue(dialogueContent.text || dialogueContent, false, null, null, onDialogueEnd);
     }
   }
   showDialogue(currentDialogue);
@@ -77,7 +75,8 @@ export function createMainScene() {
     const pcTable = k.make([k.sprite("tables", { anim: "pc-on" }), k.pos(128, 64), k.scale(scaleFactor)]);
     k.add(pcTable);
 
-    displayDialogue(introText);
+    // Display intro text with click-to-close functionality
+    displayDialogue(introText, true);
 
     // Add map layers
     for (const layer of layers) {
@@ -126,7 +125,7 @@ export function createMainScene() {
               mom.play("mom-side");
           }
       }
-  });
+    });
     // Setup camera
     setCamScale(k);
     k.onResize(() => {
