@@ -27,9 +27,10 @@ class LanguageManager {
 
   async loadLanguage(lang) {
     try {
-      const response = await fetch(`./src/data/dialogue-${lang}.json`);
+      // Fixed path: files are now in public folder, accessible at root level
+      const response = await fetch(`./dialogue-${lang}.json`);
       if (!response.ok) {
-        throw new Error(`Failed to load language ${lang}`);
+        throw new Error(`Failed to load language ${lang}: ${response.status} ${response.statusText}`);
       }
       this.dialogueData = await response.json();
       this.currentLanguage = lang;
